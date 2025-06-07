@@ -699,6 +699,7 @@ const utils = {
 
 // Initialize all functionality when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize core functionality
     initNavigation();
     initScrollAnimations();
     initContactForm();
@@ -719,6 +720,53 @@ document.addEventListener('DOMContentLoaded', () => {
     
     console.log('🚀 Website initialized successfully!');
 });
+
+// Additional initialization for pages that might load content dynamically
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeWebsite);
+} else {
+    initializeWebsite();
+}
+
+function initializeWebsite() {
+    // Ensure hamburger menu works on all pages
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function(e) {
+            e.preventDefault();
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Close menu when clicking on links
+        const navLinks = navMenu.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+}
 
 // Export utils for potential external use
 if (typeof module !== 'undefined' && module.exports) {
