@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Business Name | Professional Services</title>
-    <meta name="description" content="Professional services tailored to your needs. Contact us today for expert solutions.">
+    <title>SMG Electrical | Modern Electrical Solutions Gold Coast</title>
+    <meta name="description" content="Premium electrical services on the Gold Coast. Licensed electricians delivering modern, reliable solutions for residential and commercial properties.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>BusinessName</h2>
+                <span class="logo-icon">⚡</span>
+                <h2>SMG ELECTRICAL</h2>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#services" class="nav-link">Services</a>
-                <a href="#about" class="nav-link">About</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="#areas" class="nav-link">Areas</a>
                 <a href="#testimonials" class="nav-link">Reviews</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <a href="tel:+1234567890" class="nav-cta">
+                <a href="tel:+61412345678" class="nav-cta">
                     <i class="fas fa-phone"></i> Call Now
                 </a>
             </div>
@@ -34,27 +36,49 @@
         </div>
     </nav>
 
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        <div class="container">
+            <div class="emergency-content">
+                <span class="emergency-icon">⚡</span>
+                <span class="emergency-text">24/7 Emergency Electrical Service</span>
+                <a href="tel:+61412345678" class="emergency-btn">
+                    <i class="fas fa-phone-alt"></i> 0412 345 678
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background"></div>
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="hero-line">Professional Services</span>
-                    <span class="hero-line">That Drive Results</span>
+                    <span class="hero-line">ELECTRICAL EXCELLENCE</span>
+                    <span class="hero-line">REDEFINED</span>
                 </h1>
-                <p class="hero-subtitle">We deliver exceptional solutions tailored to your unique needs. Experience the difference professional service makes.</p>
+                <p class="hero-subtitle">Premium electrical solutions delivered with precision and innovation. Your trusted Gold Coast electricians.</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
-                    <a href="tel:+1234567890" class="btn btn-secondary">
-                        <i class="fas fa-phone"></i> (123) 456-7890
+                    <a href="#contact" class="btn btn-glow">Get Free Quote</a>
+                    <a href="tel:+61412345678" class="btn btn-glass">
+                        <i class="fas fa-phone"></i> Emergency Service
                     </a>
                 </div>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-certificate"></i>
+                        <span>Licensed & Certified</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Fully Insured</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7 Available</span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="hero-scroll">
-            <span>Scroll Down</span>
-            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
@@ -63,32 +87,97 @@
         <div class="container">
             <div class="section-header">
                 <h2>Our Services</h2>
-                <p>Comprehensive solutions designed to help your business thrive</p>
+                <p>Cutting-edge electrical solutions for modern living and business</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card fade-in">
                     <div class="service-icon">
-                        <i class="fas fa-cogs"></i>
+                        <i class="fas fa-bolt"></i>
                     </div>
-                    <h3>Service One</h3>
-                    <p>Professional service description that highlights the value and benefits to potential clients.</p>
-                    <a href="#contact" class="service-link">Learn More</a>
+                    <h3>Electrical Installation</h3>
+                    <p>Modern electrical installations for new builds and renovations. Smart home integration and energy-efficient solutions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Smart Home Systems</li>
+                        <li><i class="fas fa-check"></i> LED Lighting Design</li>
+                        <li><i class="fas fa-check"></i> Power & Data Points</li>
+                        <li><i class="fas fa-check"></i> Circuit Installation</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Learn More</a>
                 </div>
-                <div class="service-card">
+
+                <div class="service-card fade-in">
                     <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Service Two</h3>
-                    <p>Expert solutions tailored to meet your specific requirements and business objectives.</p>
-                    <a href="#contact" class="service-link">Learn More</a>
+                    <h3>Maintenance & Repairs</h3>
+                    <p>Swift diagnosis and repair of electrical issues. Preventive maintenance to ensure optimal performance.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Fault Detection</li>
+                        <li><i class="fas fa-check"></i> Emergency Repairs</li>
+                        <li><i class="fas fa-check"></i> System Upgrades</li>
+                        <li><i class="fas fa-check"></i> Safety Checks</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Book Service</a>
                 </div>
-                <div class="service-card">
+
+                <div class="service-card fade-in">
                     <div class="service-icon">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-solar-panel"></i>
                     </div>
-                    <h3>Service Three</h3>
-                    <p>Dedicated support and consultation to ensure your success every step of the way.</p>
-                    <a href="#contact" class="service-link">Learn More</a>
+                    <h3>Solar Solutions</h3>
+                    <p>Harness the power of the sun with our premium solar installations. Future-proof your energy needs.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> System Design</li>
+                        <li><i class="fas fa-check"></i> Battery Storage</li>
+                        <li><i class="fas fa-check"></i> Grid Connection</li>
+                        <li><i class="fas fa-check"></i> Monitoring Apps</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Go Solar</a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial Electric</h3>
+                    <p>Comprehensive electrical solutions for businesses. Minimize downtime with our efficient service.</p>
+                                        <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Office Fitouts</li>
+                        <li><i class="fas fa-check"></i> Retail Lighting</li>
+                        <li><i class="fas fa-check"></i> Data Networks</li>
+                        <li><i class="fas fa-check"></i> Compliance Testing</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Quote</a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>EV Charging</h3>
+                    <p>Future-ready electric vehicle charging solutions. Professional installation for all EV brands.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Home Chargers</li>
+                        <li><i class="fas fa-check"></i> Smart Integration</li>
+                        <li><i class="fas fa-check"></i> Load Management</li>
+                        <li><i class="fas fa-check"></i> Solar Compatible</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Install Now</a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safety & Compliance</h3>
+                    <p>Comprehensive safety inspections and compliance certificates. Protect your property and loved ones.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Safety Switches</li>
+                        <li><i class="fas fa-check"></i> Smoke Alarms</li>
+                        <li><i class="fas fa-check"></i> Test & Tag</li>
+                        <li><i class="fas fa-check"></i> Certificates</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Schedule Check</a>
                 </div>
             </div>
         </div>
@@ -98,42 +187,142 @@
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
-                <div class="about-text">
-                    <h2>Why Choose Us</h2>
-                    <p>With years of experience and a commitment to excellence, we've helped countless businesses achieve their goals through our professional services.</p>
+                <div class="about-text slide-in-left">
+                    <h2>Powering Gold Coast's Future</h2>
+                    <p>With over 15 years of excellence, SMG Electrical stands at the forefront of modern electrical solutions. We combine traditional craftsmanship with cutting-edge technology to deliver unparalleled service.</p>
+                    <p>Our team of master electricians is passionate about innovation, safety, and exceeding expectations. From smart homes to sustainable energy solutions, we're shaping the future of electrical services on the Gold Coast.</p>
                     <div class="about-features">
                         <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Expert Team</span>
+                            <i class="fas fa-bolt"></i>
+                            <span>Master Electricians</span>
                         </div>
                         <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Proven Results</span>
+                            <i class="fas fa-award"></i>
+                            <span>15+ Years Excellence</span>
                         </div>
                         <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>24/7 Support</span>
+                            <i class="fas fa-users"></i>
+                            <span>1500+ Happy Clients</span>
                         </div>
                         <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Satisfaction Guaranteed</span>
+                            <i class="fas fa-star"></i>
+                            <span>5-Star Rated</span>
                         </div>
                     </div>
-                    <a href="#contact" class="btn btn-primary">Work With Us</a>
+                    <a href="#contact" class="btn btn-glow">Start Your Project</a>
                 </div>
-                <div class="about-stats">
+                <div class="about-stats slide-in-right">
                     <div class="stat-card">
-                        <div class="stat-number" data-target="150">0</div>
-                        <div class="stat-label">Happy Clients</div>
+                        <div class="stat-number" data-target="1500">0</div>
+                        <div class="stat-label">Projects Completed</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-number" data-target="15">0</div>
                         <div class="stat-label">Years Experience</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number" data-target="98">0</div>
-                        <div class="stat-label">Success Rate %</div>
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Satisfaction Rate %</div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section id="areas" class="service-areas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Service Coverage</h2>
+                <p>Proudly serving all areas across the Gold Coast</p>
+            </div>
+            <div class="areas-content">
+                <div class="areas-map fade-in">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225445.41810874762!2d153.24976922737827!3d-28.01672299074589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91102d57be3eb3%3A0x502a35af3de8e00!2sGold%20Coast%20QLD!5e0!3m2!1sen!2sau!4v1234567890123!5m2!1sen!2sau"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="areas-list fade-in">
+                    <h3>We Service All Gold Coast Suburbs</h3>
+                    <div class="areas-grid">
+                        <div class="area-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Southport</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Surfers Paradise</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Broadbeach</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Burleigh Heads</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Robina</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Varsity Lakes</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Mermaid Beach</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Palm Beach</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Currumbin</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Coolangatta</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nerang</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Coomera</span>
+                        </div>
+                    </div>
+                    <p style="margin-top: var(--spacing-xl); color: var(--grey-light);">
+                        <i class="fas fa-info-circle"></i> Don't see your suburb? We likely service your area too. Give us a call!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications">
+        <div class="container">
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <img src="https://via.placeholder.com/180x60/ffffff/000000?text=Master+Electricians" alt="Master Electricians">
+                </div>
+                <div class="cert-item">
+                    <img src="https://via.placeholder.com/180x60/ffffff/000000?text=QLD+Licensed" alt="Queensland Licensed">
+                </div>
+                <div class="cert-item">
+                    <img src="https://via.placeholder.com/180x60/ffffff/000000?text=Solar+Accredited" alt="Solar Accredited">
+                </div>
+                <div class="cert-item">
+                    <img src="https://via.placeholder.com/180x60/ffffff/000000?text=Safety+Certified" alt="Safety Certified">
                 </div>
             </div>
         </div>
@@ -143,11 +332,11 @@
     <section id="testimonials" class="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2>What Our Clients Say</h2>
-                <p>Don't just take our word for it - hear from our satisfied customers</p>
+                <h2>Client Reviews</h2>
+                <p>Real feedback from our valued Gold Coast customers</p>
             </div>
             <div class="testimonials-grid">
-                <div class="testimonial-card">
+                <div class="testimonial-card fade-in">
                     <div class="testimonial-content">
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -156,16 +345,16 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p>"Exceptional service and outstanding results. They exceeded our expectations in every way."</p>
+                        <p>SMG Electrical transformed our home with their smart lighting system. Professional, punctual, and the results are amazing. Highly recommend!</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-info">
-                            <h4>John Smith</h4>
-                            <span>CEO, Company Name</span>
+                            <h4>Sarah Mitchell</h4>
+                            <span>Broadbeach Waters</span>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card fade-in">
                     <div class="testimonial-content">
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -174,16 +363,16 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p>"Professional, reliable, and delivers on time. Highly recommend their services to anyone."</p>
+                        <p>Emergency call at midnight - they arrived within 30 minutes and fixed our power issue quickly. True 24/7 service when you need it most.</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-info">
-                            <h4>Sarah Johnson</h4>
-                            <span>Marketing Director</span>
+                            <h4>David Chen</h4>
+                            <span>Surfers Paradise</span>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card fade-in">
                     <div class="testimonial-content">
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -192,12 +381,12 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p>"The best investment we made for our business. Their expertise made all the difference."</p>
+                        <p>Installed our Tesla charger and solar system. Their knowledge of modern electrical solutions is impressive. Excellent workmanship!</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-info">
-                            <h4>Mike Davis</h4>
-                            <span>Business Owner</span>
+                            <h4>Mark Thompson</h4>
+                            <span>Robina</span>
                         </div>
                     </div>
                 </div>
@@ -210,7 +399,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>Get In Touch</h2>
-                <p>Ready to get started? Contact us today for a free consultation</p>
+                <p>Ready to experience premium electrical services? Let's discuss your project</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
@@ -218,76 +407,80 @@
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4>Call Us</h4>
-                            <a href="tel:+1234567890">(123) 456-7890</a>
+                            <a href="tel:+61412345678">0412 345 678</a>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email Us</h4>
-                            <a href="mailto:info@yourbusiness.com">info@yourbusiness.com</a>
+                            <h4>Email</h4>
+                            <a href="mailto:info@smgelectrical.com.au">info@smgelectrical.com.au</a>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Visit Us</h4>
-                            <p>123 Business Street<br>City, State 12345</p>
+                            <h4>Service Area</h4>
+                            <p>Gold Coast & Surrounds</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
                         <div>
-                            <h4>Business Hours</h4>
-                            <p>Mon-Fri: 9AM-6PM<br>Sat: 9AM-2PM</p>
+                            <h4>Hours</h4>
+                            <p>24/7 Emergency Service<br>Mon-Fri: 7AM-5PM</p>
                         </div>
                     </div>
                 </div>
                 <form class="contact-form" id="contact-form">
                     <div class="form-group">
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required placeholder=" ">
                         <label for="name">Your Name</label>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" name="email" required>
-                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Email Address</label>
                     </div>
                     <div class="form-group">
-                        <input type="tel" id="phone" name="phone">
-                        <label for="phone">Your Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder=" ">
+                        <label for="phone">Phone Number</label>
                     </div>
                     <div class="form-group">
                         <select id="service" name="service" required>
-                            <option value="">Select a Service</option>
-                            <option value="service1">Service One</option>
-                            <option value="service2">Service Two</option>
-                            <option value="service3">Service Three</option>
-                            <option value="consultation">Free Consultation</option>
+                            <option value="">Select Service</option>
+                            <option value="installation">Electrical Installation</option>
+                            <option value="repair">Repairs & Maintenance</option>
+                            <option value="solar">Solar Solutions</option>
+                            <option value="commercial">Commercial Electric</option>
+                            <option value="ev">EV Charging</option>
+                            <option value="emergency">Emergency Service</option>
+                            <option value="other">Other</option>
                         </select>
-                        <label for="service">Service Needed</label>
+                        <label for="service">Service Required</label>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Project Details</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-glow">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Map Section -->
-    <section class="map-section">
-        <div class="map-container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3966443058984!2d-74.00597968459406!3d40.71278597932881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316e6d2c6b%3A0x8d52b3b9f8b4e4e4!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
-                width="100%"
-                height="400"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Power Up?</h2>
+                <p>Join hundreds of satisfied customers who trust SMG Electrical for their electrical needs</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-glass">Get Free Quote</a>
+                    <a href="tel:+61412345678" class="btn btn-glow">
+                        <i class="fas fa-phone"></i> Call 0412 345 678
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -296,13 +489,12 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>BusinessName</h3>
-                    <p>Professional services that drive results for your business. Contact us today to get started.</p>
+                    <h3>SMG Electrical</h3>
+                    <p>Premium electrical solutions for modern Gold Coast homes and businesses. Licensed, insured, and available 24/7.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -311,36 +503,39 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="#areas">Service Areas</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="#services">Service One</a></li>
-                        <li><a href="#services">Service Two</a></li>
-                        <li><a href="#services">Service Three</a></li>
-                        <li><a href="#contact">Consultation</a></li>
+                        <li><a href="#services">Electrical Installation</a></li>
+                        <li><a href="#services">Solar Solutions</a></li>
+                        <li><a href="#services">EV Charging</a></li>
+                        <li><a href="#services">Emergency Service</a></li>
+                        <li><a href="#services">Commercial Electric</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
+                    <h4>Contact</h4>
                     <div class="footer-contact">
-                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
-                        <p><i class="fas fa-envelope"></i> info@yourbusiness.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> 123 Business Street, City, State 12345</p>
+                        <p><i class="fas fa-phone"></i> 0412 345 678</p>
+                        <p><i class="fas fa-envelope"></i> info@smgelectrical.com.au</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Gold Coast, QLD</p>
+                        <p><i class="fas fa-certificate"></i> Lic# 12345678</p>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 BusinessName. All rights reserved.</p>
+                <p>&copy; 2025 SMG Electrical. All rights reserved. | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
             </div>
         </div>
     </footer>
 
     <!-- Floating Action Buttons -->
     <div class="floating-actions">
-        <a href="tel:+1234567890" class="fab-button fab-phone" aria-label="Call Now">
+        <a href="tel:+61412345678" class="fab-button fab-phone" aria-label="Call Now">
             <i class="fas fa-phone"></i>
         </a>
         <a href="#contact" class="fab-button fab-message" aria-label="Send Message">
