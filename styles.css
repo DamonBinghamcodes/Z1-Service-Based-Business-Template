@@ -970,18 +970,31 @@ a:hover {
     display: flex;
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-md);
+    border-radius: 50%;
 }
 
 .social-links a {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     background: var(--color-background-secondary);
-    border-radius: 50%;
+    border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--color-text);
-    transition: var(--transition-default);
+    font-size: 22px;
+    line-height: 0;
+    padding: 0;
+}
+
+/* Ensure any SVG or icon inside .social-links a is centered and aligned */
+.social-links a i,
+.social-links a svg {
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
 }
 
 .social-links a:hover {
@@ -1026,15 +1039,28 @@ a:hover {
 }
 
 .fab {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--shadow-lg);
-    transition: var(--transition-default);
-    text-decoration: none;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    line-height: 0;
+}
+
+.fab i,
+.fab svg,
+.fab-icon {
+    font-size: 22px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    position: relative;
+    top: 16px;
 }
 
 .fab:hover {
@@ -1191,4 +1217,62 @@ a:hover {
         right: var(--spacing-md);
         bottom: calc(140px + var(--spacing-md));
     }
+}
+
+.glow-green:hover {
+    box-shadow: 0 0 12px var(--color-accent), 0 0 24px var(--color-accent);
+  }
+  
+  .glow-blue:hover {
+    box-shadow: 0 0 12px var(--color-primary), 0 0 24px var(--color-primary);
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 255, 65, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(0, 255, 65, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 255, 65, 0);
+    }
+  }
+  
+  @keyframes pulse-blue {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 113, 227, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(0, 113, 227, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 113, 227, 0);
+    }
+  }
+
+  .btn,
+.nav-cta,
+.mobile-cta,
+.btn-primary {
+  animation: pulse 2s infinite;
+}
+
+.fab,
+.social-links a {
+  animation: pulse-blue 2s infinite;
+}
+
+.btn:hover,
+.nav-cta:hover,
+.mobile-cta:hover,
+.btn-primary:hover {
+  transform: scale(1.02);
+  /* No color change */
+}
+
+.social-links a:hover,
+.fab:hover {
+  transform: scale(1.1);
+  /* No color change */
 }
